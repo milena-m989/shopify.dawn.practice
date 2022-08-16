@@ -1,29 +1,60 @@
+<h2>{{ section.settings.masonry_grid }}</h2>
 <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
+    {%- for block in section.blocks -%}
+        <div class="grid-item">
+            <a href="{{ block.settings.url }}" alt="{{ block.settings.text }}">
+                <img src="{{ block.settings.image | img_url }}" alt="{{ block.settings.text }}" width="" height="">
+            </a>
+            <a href="{{ block.settings.url }}" alt= "{{ block.settings.text }}">
+                <h3>{{ block.settings.text }}</h3>
+            </a>
+        </div>
+    {%- endfor -%}
 </div>
 
 {% schema %}
 {
-    "name": "Masonry Grid",
-    "settings": [
-        {   
-            "id":"masonry_grid",
-            "type":"image_picker",
-            "label":"Add a masonry grid"
-        }
-    ],
-    "templates": [
-        "index"
-    ],
-    "presets": [
+  "name": "Masonry Grid",
+  "settings": [
+    {
+      "id": "masonry_grid",
+      "type": "text",
+      "label": "Add a masonry grid"
+    }
+  ],
+  "templates": [
+    "index"
+  ],
+  "presets": [
+    {
+      "name": "Masonry Grid",
+      "category": "Masonry"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Masonry Image",
+      "type": "masonry_image",
+      "settings": [
         {
-            "name": "Masonry Grid",
-            "category": "Masonry"
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
         }
-    ]
+      ]
+    }
+  ]
 }
-
 {% endschema %}
 
 
