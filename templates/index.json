@@ -1,58 +1,5 @@
 {
   "sections": {
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -207,6 +154,96 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "166072959119eac7bf": {
+      "type": "masonry",
+      "blocks": {
+        "a9097218-5b80-46ae-b3c6-a9a4e0495f17": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/scrumptious-brunch-setting.jpg",
+            "text": "Waffle",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
+        },
+        "5291a02e-0fb4-4773-b98c-596f5bc448d8": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/delicious-plate-of-pepperoni-pizza.jpg",
+            "text": "Pizza",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
+        },
+        "7bf1cdd1-f8b2-4815-807b-172d309f5f11": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/two-red-cocktails-on-a-tray.jpg",
+            "text": "Cocktails",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
+        }
+      },
+      "block_order": [
+        "a9097218-5b80-46ae-b3c6-a9a4e0495f17",
+        "5291a02e-0fb4-4773-b98c-596f5bc448d8",
+        "7bf1cdd1-f8b2-4815-807b-172d309f5f11"
+      ],
+      "settings": {
+        "masonry_grid": "Check out my new recipes"
+      }
     }
   },
   "order": [
@@ -215,6 +252,7 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "166072959119eac7bf"
   ]
 }
