@@ -234,12 +234,48 @@
             "text": "Cocktails",
             "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
           }
+        },
+        "27adf8cb-dc95-4067-8b39-338ffa4858ca": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/three-spanakopita-spirals-on-textured-plate.jpg",
+            "text": "Cheese pie",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
+        },
+        "0bad2fe3-fbcd-4f9d-9300-3d07ed34a182": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hand-holds-up-a-two-scoop-ice-cream-cone.jpg",
+            "text": "Ice cream",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
+        },
+        "472c0db9-bf1e-4a7d-ad5f-b5663bedf984": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/knife-slices-a-zucchini-in-half.jpg",
+            "text": "Cucumber",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
+        },
+        "39448e71-7f5f-4eb0-a125-1fd9a910454a": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
+            "text": "Omlette",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
         }
       },
       "block_order": [
         "a9097218-5b80-46ae-b3c6-a9a4e0495f17",
         "5291a02e-0fb4-4773-b98c-596f5bc448d8",
-        "7bf1cdd1-f8b2-4815-807b-172d309f5f11"
+        "7bf1cdd1-f8b2-4815-807b-172d309f5f11",
+        "27adf8cb-dc95-4067-8b39-338ffa4858ca",
+        "0bad2fe3-fbcd-4f9d-9300-3d07ed34a182",
+        "472c0db9-bf1e-4a7d-ad5f-b5663bedf984",
+        "39448e71-7f5f-4eb0-a125-1fd9a910454a"
       ],
       "settings": {
         "masonry_grid": "Check out my new recipes"
