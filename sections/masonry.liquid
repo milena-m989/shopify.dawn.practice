@@ -1,16 +1,19 @@
-<h2>{{ section.settings.masonry_grid }}</h2>
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 400 }'>
-    {%- for block in section.blocks -%}
-        <div class="grid-item">
-            <a href="{{ block.settings.url }}" alt="{{ block.settings.text }}">
-                <img src="{{ block.settings.image | img_url: '400x' }}" alt="{{ block.settings.text }}" width="" height="" loading="lazy">
-            </a>
-            <a href="{{ block.settings.url }}" alt= "{{ block.settings.text }}">
-                <h3>{{ block.settings.text }}</h3>
-            </a>
-        </div>
-    {%- endfor -%}
-</div>
+<section id="masonry" class="page-width">
+  <h2>{{ section.settings.masonry_grid }}</h2>
+  <div class="masonry-grid">
+      <div class="grid-sizer"></div>
+        {%- for block in section.blocks -%}
+            <div class="grid-item">
+              <div class="item-container">
+                <a href="{{ block.settings.url }}" alt="{{ block.settings.text }}">
+                    <img src="{{ block.settings.image | img_url:'300x' }}" alt="{{ block.settings.text }}" width="" height="" loading="lazy">
+                    <h3>{{ block.settings.text }}</h3>
+                </a>
+              </div>
+            </div>
+        {%- endfor -%}
+  </div>
+</section>
 
 {% schema %}
 {
@@ -58,6 +61,43 @@
 {% endschema %}
 
 {% style %}
-  
+
+#masonry .grid-item {
+  width:33%;
+}
+.grid-item img{
+  width:100%;
+  transition: transform .2s;
+}
+.grid-item img:hover{
+  transform: scale(1.1);
+}
+#masonry .grid-item h3{
+  margin:0;
+  position:absolute;
+  bottom: 10px;
+  left: 16px;
+  font-style: italic;
+}
+
+.grid-item a{
+  text-decoration: none;
+}
+.item-container{
+  position: relative;
+}
 {% endstyle %}
+
+{% javascript %}
+
+var elem = document.querySelector('.masonry-grid');
+var iso = new Isotope( elem, {
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      columnWidth: '.grid-sizer'
+    }
+});
+
+{% endjavascript %}
 
