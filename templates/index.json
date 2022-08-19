@@ -214,8 +214,8 @@
         "a9097218-5b80-46ae-b3c6-a9a4e0495f17": {
           "type": "masonry_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/scrumptious-brunch-setting.jpg",
-            "text": "Waffle",
+            "image": "shopify:\/\/shop_images\/freshly-baked-bread-in-hands.jpg",
+            "text": "Bread",
             "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
           }
         },
@@ -266,6 +266,54 @@
             "text": "Omlette",
             "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
           }
+        },
+        "756c9589-3ddb-415e-b0c3-36f38a5c16aa": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/two-pizzas-and-wine.jpg",
+            "text": "Pizza",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
+        },
+        "93727948-a716-4ad9-8a4b-1e8ea780b5dd": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/berries-granola.jpg",
+            "text": "Breakfast",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
+        },
+        "34f38f0f-71a8-4d00-89b5-b47f2ea06c14": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/biscotti-lays-in-a-monstera-leaf.jpg",
+            "text": "Bread with walnuts",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
+        },
+        "31ce86ab-2013-4ae1-ab95-ddd9f6639be6": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/eggy-breakfast.jpg",
+            "text": "Breakfast 2",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
+        },
+        "369397a0-0eba-4e26-9672-2269b740381f": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hamburger-and-fries.jpg",
+            "text": "Burger",
+            "url": ""
+          }
+        },
+        "eae27974-4194-4744-a4cc-4b58928a2832": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/berry-cheesecake.jpg",
+            "text": "Cake",
+            "url": "https:\/\/github.com\/milena-m989\/shopify.dawn.practice"
+          }
         }
       },
       "block_order": [
@@ -275,7 +323,13 @@
         "27adf8cb-dc95-4067-8b39-338ffa4858ca",
         "0bad2fe3-fbcd-4f9d-9300-3d07ed34a182",
         "472c0db9-bf1e-4a7d-ad5f-b5663bedf984",
-        "39448e71-7f5f-4eb0-a125-1fd9a910454a"
+        "39448e71-7f5f-4eb0-a125-1fd9a910454a",
+        "756c9589-3ddb-415e-b0c3-36f38a5c16aa",
+        "93727948-a716-4ad9-8a4b-1e8ea780b5dd",
+        "34f38f0f-71a8-4d00-89b5-b47f2ea06c14",
+        "31ce86ab-2013-4ae1-ab95-ddd9f6639be6",
+        "369397a0-0eba-4e26-9672-2269b740381f",
+        "eae27974-4194-4744-a4cc-4b58928a2832"
       ],
       "settings": {
         "masonry_grid": "Check out my new recipes"

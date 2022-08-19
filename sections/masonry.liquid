@@ -1,18 +1,17 @@
 <section id="masonry" class="page-width">
-  <h2>{{ section.settings.masonry_grid }}</h2>
-  <div class="masonry-grid">
-      <div class="grid-sizer"></div>
-        {%- for block in section.blocks -%}
-            <div class="grid-item">
-              <div class="item-container">
-                <a href="{{ block.settings.url }}" alt="{{ block.settings.text }}">
-                    <img src="{{ block.settings.image | img_url:'300x' }}" alt="{{ block.settings.text }}" width="" height="" loading="lazy">
-                    <h3>{{ block.settings.text }}</h3>
-                </a>
-              </div>
-            </div>
-        {%- endfor -%}
-  </div>
+<h2>{{ section.settings.masonry_grid }}</h2>
+<div class="masonry-grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200}'>
+    {%- for block in section.blocks -%}
+        <div class="grid-item">
+          <div class="item-container">
+            <a href="{{ block.settings.url }}" alt="{{ block.settings.text }}">
+                <img src="{{ block.settings.image | img_url }}" alt="{{ block.settings.text }}" width="" height="" loading="lazy">
+                <h3>{{ block.settings.text }}</h3>
+            </a>
+          </div>
+        </div>
+    {%- endfor -%}
+</div>
 </section>
 
 {% schema %}
@@ -62,8 +61,8 @@
 
 {% style %}
 
-#masonry .grid-item {
-  width:33%;
+.grid-item {
+  width:200px;
 }
 .grid-item img{
   width:100%;
@@ -86,18 +85,9 @@
 .item-container{
   position: relative;
 }
+
 {% endstyle %}
 
 {% javascript %}
 
-var elem = document.querySelector('.masonry-grid');
-var iso = new Isotope( elem, {
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    masonry: {
-      columnWidth: '.grid-sizer'
-    }
-});
-
 {% endjavascript %}
-
