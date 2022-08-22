@@ -4,7 +4,7 @@
     {%- for block in section.blocks -%}
         <div class="grid-item">
           <div class="item-container">
-            <a href="{{ block.settings.url }}" alt="{{ block.settings.text }}">
+            <a href="{{ block.settings.url }}" alt="{{ block.settings.text}}" class="masonry-link">
                 <img src="{{ block.settings.image | img_url: '200x' }}" alt="{{ block.settings.text }}" width="" height="" loading="lazy">
                 <h3>{{ block.settings.text }}</h3>
             </a>
@@ -61,33 +61,40 @@
 
 {% style %}
 
-.grid-item {
-  width: 200px;
-  padding: 5px;
-}
-.grid-item img{
-  width:100%;
-  display: block;
-}
-.grid-item img:hover{
-  transform: scale(1.2);
-}
-#masonry .grid-item h3{
-  margin:0;
-  position:absolute;
+#masonry .grid-item h3 {
+  margin: 0;
+  position: absolute;
   bottom: 10px;
-  left: 16px;
-  font-style: italic;
-  color: white;
+  left: 10px;
+  color: #fff;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
 }
-
-.grid-item a{
-  text-decoration: none;
+#masonry .grid-item .item-container a:after {
+  content: "";
+  background: linear-gradient(0deg, #0000008a 0%, transparent 20%);
+  position: absolute;
+  width: 100%;
+  display: block;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
 }
-.item-container{
+.masonry-link {
   position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
-
+#masonry .grid-item a.masonry-link:hover h3, #masonry .grid-item a.masonry-link:hover:after  {
+  opacity:100%;
+  visibility: visible;
+}
+#masonry .grid-item a.masonry-link h3, #masonry .grid-item a.masonry-link:after {
+  transition: .5s ease-in-out opacity;
+}
 {% endstyle %}
 
 {% javascript %}
