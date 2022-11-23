@@ -334,6 +334,23 @@
       "settings": {
         "masonry_grid": "Check out my new recipes"
       }
+    },
+    "1669209459c0ee74e2": {
+      "type": "apps",
+      "blocks": {
+        "c040155a-86ce-42ea-8e48-58bf9cd838f5": {
+          "type": "shopify:\/\/apps\/test\/blocks\/app-block\/8cff1648-80b7-4202-b11b-5a647ba6eac8",
+          "settings": {
+            "color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "c040155a-86ce-42ea-8e48-58bf9cd838f5"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -343,6 +360,7 @@
     "collage",
     "video",
     "multicolumn",
-    "166072959119eac7bf"
+    "166072959119eac7bf",
+    "1669209459c0ee74e2"
   ]
 }
